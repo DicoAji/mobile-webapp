@@ -15,19 +15,75 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: white;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+input,
+textarea,
+select {
+  padding: 10px 10px;
+  color: #4f6270;
+  background: #22393d;
+  border-radius: 10px;
+  outline: #c9c9c9;
+  /* border: 1px solid #c9c9c9; */
+}
+.bg-transparent {
+  background: transparent !important;
+}
+option {
+  padding: 5px;
+}
+.select__control {
+  color: #4f6270;
+  background: #22393d;
+  border-radius: 10px;
+  outline: #c9c9c9;
+}
+.select__menu {
+  color: #4f6270;
+  background: #22393d;
+}
+.select__indicator {
+  background: #22393d;
+}
+
+input::placeholder {
+  color: rgb(85, 99, 118) !important; /* Warna teks placeholder */
+  opacity: 1;
+  z-index: 20;
+  /* Pastikan opacity placeholder diatur ke 1 */
+}
+label {
+  color: #3b4d5b;
+}
+button {
+  padding: 10px 10px;
+  color: white;
+  border-radius: 10px;
+  background: linear-gradient(49deg, #62cdcb 0%, #4599db 100%);
+}
+.bg-radial {
+  background: radial-gradient(
+    124.23% 171.99% at 100% -3.39%,
+    rgb(31, 66, 71) 0%,
+    rgb(13, 29, 35) 56.18215203285217%,
+    rgb(9, 20, 26) 100%
+  );
+  color: white;
 }
